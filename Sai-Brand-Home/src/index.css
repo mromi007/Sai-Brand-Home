@@ -257,11 +257,23 @@ header {
     font-size: 12px;
     margin-left: 5px;
 }
-.btn-add-bag {
+.btn-add-bag-a {
     margin-top: 8px;
     font-size: 18px;
+    color: #000000;
     width: 100%;
-    background-color: lightgreen;
+    background-color: rgb(0, 136, 255);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-add-bag-r {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    background-color: rgb(34, 37, 36);
     border: none;
     padding: 5px 15px;
     border-radius: 10px;
@@ -494,3 +506,11 @@ a.action_container:link {
 
 
 
+
+
+
+
+/* spinner */
+.spinner{
+    margin: 100px 0px;
+}

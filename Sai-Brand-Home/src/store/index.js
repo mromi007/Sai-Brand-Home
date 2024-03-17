@@ -1,9 +1,13 @@
 import {configureStore} from "@reduxjs/toolkit";
-import itemsSlice from "./itemSlice";
+import itemSlice from "./itemSlice";
+import fetchStatusSlice from "./fetchStatusSlice";
+import bagSlice from "./bagSlice";
 
 const saibrandStore =configureStore({
   reducer:{
-    items: itemsSlice.reducer
+    items: itemSlice.reducer,
+    fetchStatus: fetchStatusSlice.reducer,
+    bag: bagSlice.reducer,
   }
 });
 

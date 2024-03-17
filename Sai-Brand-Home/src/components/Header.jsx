@@ -2,8 +2,13 @@ import { GoPersonFill } from "react-icons/go";
 import { GiHeartBeats } from "react-icons/gi";
 import { BsBagHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const Header = () =>{
+
+  const bag = useSelector(store => store.bag);
+  
+
   return(
     <>
     <header>
@@ -28,7 +33,7 @@ const Header = () =>{
             <Link className="action_container" to="/bag">
                 <BsBagHeartFill />
                 <span className="action_name">Bag</span>
-                <span className="bag-item-count">0</span>
+                <span className="bag-item-count">{bag.length}</span>
             </Link>
             <div className="action_container">
                 <GoPersonFill />
